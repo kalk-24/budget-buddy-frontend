@@ -7,9 +7,22 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+
+# Build
 dist
 dist-ssr
+build
+coverage
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
 *.local
 
 # Editor directories and files
@@ -17,8 +30,16 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Optional tooling
+*.tsbuildinfo
+.cache/
+.vite/
+tmp/
+temp/
