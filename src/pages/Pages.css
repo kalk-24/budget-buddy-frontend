@@ -1,0 +1,37 @@
+﻿.content h2 { color: #6d28d9; margin-top: 0; }
+.card { background: #fff; padding: 1.25rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.card h3 { margin: 0 0 .75rem; color: #6d28d9; }
+.muted { color: #6b7280; }
+.form { display: flex; flex-direction: column; gap: .4rem; }
+.form label { font-weight: 600; font-size: .9rem; }
+input, select { padding: .6rem; border: 1px solid #d1d5db; border-radius: 8px; font-size: 1rem; }
+input:focus, select:focus { outline: 2px solid #7c3aed; border-color: #7c3aed; }
+.row { display: flex; gap: .5rem; margin-top: .5rem; }
+.card button { padding: .6rem 1rem; border: 0; border-radius: 8px; background: #db2777; color: #fff; cursor: pointer; }
+.card button:hover:not(:disabled) { background: #be185d; }
+.card button:disabled { opacity: .6; cursor: not-allowed; }
+.card button.secondary { background: #e5e7eb; color: #111827; }
+.card button.danger { background: #dc2626; }
+.error { background: #fee2e2; color: #b91c1c; padding: .6rem; border-radius: 8px; margin: 0 0 .5rem; }
+.income { color: #16a34a; font-weight: 600; }
+.expense { color: #dc2626; font-weight: 600; }
+.tx-layout { display: grid; grid-template-columns: 320px 1fr; gap: 1.5rem; align-items: start; }
+.filters { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.tx-row { display: grid; grid-template-columns: 1fr auto auto; gap: 1rem; align-items: center; padding: .8rem 0; border-bottom: 1px solid #e5e7eb; }
+.tx-row.recent { grid-template-columns: 1fr auto; }
+.tx-row small { display: block; color: #6b7280; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+.stat { display: flex; flex-direction: column; gap: .3rem; }
+.stat strong { font-size: 1.6rem; }
+.dash-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.budget { padding: .9rem 0; border-bottom: 1px solid #e5e7eb; }
+.budget-head { display: flex; justify-content: space-between; margin-bottom: .4rem; }
+.bar { height: 10px; background: #e5e7eb; border-radius: 999px; overflow: hidden; }
+.bar div { height: 100%; border-radius: 999px; }
+.budget-nums { display: flex; flex-wrap: wrap; gap: 1rem; margin: .5rem 0; font-size: .9rem; color: #374151; }
+@media (max-width: 768px) {
+  .tx-layout, .dash-grid { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+  .tx-row { grid-template-columns: 1fr auto; }
+  .tx-row .row { grid-column: 1 / -1; margin-top: 0; }
+}

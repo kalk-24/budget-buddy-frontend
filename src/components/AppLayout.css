@@ -1,0 +1,19 @@
+﻿.app { min-height: 100vh; background: #faf5ff; font-family: system-ui, "Segoe UI", Arial, sans-serif; color: #111827; }
+.app-top { display: flex; justify-content: space-between; align-items: center; padding: .85rem 1.5rem; background: #7c3aed; color: #fff; }
+.app-brand { display: flex; align-items: center; gap: .6rem; font-size: 1.3rem; font-weight: 800; color: #fff; text-decoration: none; }
+.app-brand-logo { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: rgba(255,255,255,.2); }
+.app-user { display: flex; align-items: center; gap: 1rem; }
+.app-logout { display: inline-flex; align-items: center; gap: .4rem; padding: .5rem .9rem; border: 0; border-radius: 8px; background: #db2777; color: #fff; font-weight: 600; cursor: pointer; font-size: .95rem; }
+.app-logout:hover { background: #be185d; }
+.app-body { display: grid; grid-template-columns: 230px 1fr; min-height: calc(100vh - 62px); }
+.app-side { background: #fff; padding: 1.25rem .9rem; border-right: 1px solid #e5e7eb; display: flex; flex-direction: column; gap: .35rem; }
+.app-link { display: flex; align-items: center; gap: .7rem; padding: .7rem .9rem; border-radius: 10px; color: #374151; text-decoration: none; font-weight: 600; }
+.app-link:hover { background: #f3e8ff; color: #6d28d9; }
+.app-link.active { background: #7c3aed; color: #fff; }
+.app-content { padding: 1.75rem; }
+@media (max-width: 768px) {
+  .app-body { grid-template-columns: 1fr; }
+  .app-side { flex-direction: row; border-right: 0; border-bottom: 1px solid #e5e7eb; overflow-x: auto; padding: .6rem; }
+  .app-content { padding: 1rem; }
+  .app-top { padding: .75rem 1rem; }
+}
